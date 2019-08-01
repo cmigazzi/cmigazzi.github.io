@@ -19,69 +19,133 @@
     </a>
   </div>
   <div class="d-flex flex-wrap justify-content-around">
-    <div class="mb-3 mx-3" id="purbeurre-nginx-wrapper">
+    <div class="mb-3 mx-3" id="melomnia-wrapper">
       <div class="row">
-          <a href="#" onclick="toContent('purbeurre-nginx')">
-              <div class="preview d-flex h-100" id="purbeurre-nginx-title">
-                <p class="align-self-center text-center mx-auto font-weight-bold">Nginx deployment</p>
-              </div>
-            </a>
-<div id="purbeurre-nginx-content" class="content">
-  <p><strong>Django with Nginx !</strong></p>
+        <a data-toggle="modal" data-target="#melomniaModal"">
+          <div class="preview d-flex h-100" id="melomnia-title">
+            <p class="align-self-center text-center mx-auto font-weight-bold">Melomnia</p>
+          </div>
+        </a>
+      </div>      
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="melomniaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Melomnia</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <i class="fas fa-times fa-lg"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Music education network.</strong></p>
 <p><br/>
-Purbeurre app deployed on a ubuntu VPS with Nginx, Supervisor and Gunicorn.</p>
+Django app with postgreSQL. 
+Deployed with Nginx and Gunicorn on Debian.
+Continuous Integration with Travis CI.
+Deployment automation with Fabric.</p>
 <p><br/>
-<em><a href="http://167.99.143.96/" target="_blank">Visit the website</a></em></p>
-<p><em><a href="https://github.com/cmigazzi/P8_Pur_Beurre" target="_blank">View code</a></em></p>
-</div>      </div>      
+<em><a href="https://www.melomnia.fr/" target="_blank">Visit the website</a></em></p>
+<p><em><a href="https://github.com/cmigazzi/P13_Final" target="_blank">View code</a></em></p>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="mb-3 mx-3" id="purbeurre-wrapper">
       <div class="row">
-          <a href="#" onclick="toContent('purbeurre')">
-              <div class="preview d-flex h-100" id="purbeurre-title">
-                <p class="align-self-center text-center mx-auto font-weight-bold">Pur Beurre</p>
-              </div>
-            </a>
-<div id="purbeurre-content" class="content">
-  <p><strong>Find healthy products !</strong></p>
+        <a data-toggle="modal" data-target="#purbeurreModal"">
+          <div class="preview d-flex h-100" id="purbeurre-title">
+            <p class="align-self-center text-center mx-auto font-weight-bold">Pur Beurre</p>
+          </div>
+        </a>
+      </div>      
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="purbeurreModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Pur Beurre</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <i class="fas fa-times fa-lg"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Find healthy products !</strong></p>
 <p><br/>
 Django app with postgreSQL. 
-Deployed on Heroku.</p>
+Deployed with Nginx and Gunicorn on Ubuntu.
+Continuous Integration with Travis CI.</p>
 <p><br/>
-<em><a href="https://eatbetter2019.herokuapp.com/" target="_blank">Visit the website</a> (app needs to reload, so please wait few seconds...)</em></p>
+<em><a href="http://167.99.143.96/" target="_blank">Visit the website</a></em></p>
 <p><em><a href="https://github.com/cmigazzi/P8_Pur_Beurre" target="_blank">View code</a></em></p>
-</div>      </div>      
+          </div>
+        </div>
+      </div>
     </div>
     <div class="mb-3 mx-3" id="grandpybot-wrapper">
       <div class="row">
-          <a href="#" onclick="toContent('grandpybot')">
-              <div class="preview d-flex h-100" id="grandpybot-title">
-                <p class="align-self-center text-center mx-auto font-weight-bold">Grandpy Bot</p>
-              </div>
-            </a>
-<div id="grandpybot-content" class="content">
-  <p><strong>Search places addresses and learn history about them !</strong></p>
+        <a data-toggle="modal" data-target="#grandpybotModal"">
+          <div class="preview d-flex h-100" id="grandpybot-title">
+            <p class="align-self-center text-center mx-auto font-weight-bold">Grandpy Bot</p>
+          </div>
+        </a>
+      </div>      
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="grandpybotModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Grandpy Bot</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <i class="fas fa-times fa-lg"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Search places addresses and learn history about them !</strong></p>
 <p><br/>
 Chatbot built with Flask.
 Deployed on Heroku.</p>
 <p><br/>
 <em><a href="https://grandpy201902.herokuapp.com/" target="_blank">Visit the website</a> (app needs to reload, so please wait few seconds...)</em></p>
 <p><em><a href="https://github.com/cmigazzi/P7_GrandpyBot" target="_blank">View code</a></em></p>
-</div>      </div>      
+          </div>
+        </div>
+      </div>
     </div>
     <div class="mb-3 mx-3" id="macgyver-wrapper">
       <div class="row">
-          <a href="#" onclick="toContent('macgyver')">
-              <div class="preview d-flex h-100" id="macgyver-title">
-                <p class="align-self-center text-center mx-auto font-weight-bold">Mac Gyver</p>
-              </div>
-            </a>
-<div id="macgyver-content" class="content">
-  <p><strong>Back to 80's with MacGyver</strong></p>
+        <a data-toggle="modal" data-target="#macgyverModal"">
+          <div class="preview d-flex h-100" id="macgyver-title">
+            <p class="align-self-center text-center mx-auto font-weight-bold">Mac Gyver</p>
+          </div>
+        </a>
+      </div>      
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="macgyverModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Mac Gyver</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <i class="fas fa-times fa-lg"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Back to 80's with MacGyver</strong></p>
 <p><br/>
 Labirynth game developed with Pygame.</p>
 <p><em><a href="https://github.com/cmigazzi/P3_macgyver" target="_blank">View code</a></em></p>
-</div>      </div>      
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>    <div class="main col-8 mx-auto my-auto container" id="home">

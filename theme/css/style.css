@@ -75,6 +75,7 @@ a:hover {
     color: #081528;
     opacity: 0.8;
     box-shadow: 0.2rem #c5c5c5;
+    cursor: pointer;
 }
 
 .preview-active {
@@ -93,39 +94,26 @@ a:hover {
     box-shadow: 0.2rem #c5c5c5;
 }
 
-/* Content */
-.content {
-    display: none;
+/* Modals */
+.modal-content {
+    background-color: #081528;
+    border: 1px solid #F0AB34;
 }
 
-
-.content-visible {
-    animation-name: fadeInLeft;
-    animation-duration: 0.5s;
-    display: inline-block;
-    border: 1px solid #c5c5c5;
-    max-width: 450px;
+.modal-header {
+    border-bottom: 1px solid #F0AB34;
 }
 
-.content-visible p {
-    margin: 0;
-    padding: 0 1rem 0 1rem;
+.modal-footer {
+    border-top: 1px solid #F0AB34;
 }
 
-.content-visible a {
+button.close {
+    color: #c5c5c5;
+    text-shadow: none;
+}
+
+button.close:hover {
     color: #F0AB34;
+    text-shadow: none;
 }
-
-@keyframes fadeInLeft {
-    from {
-      opacity: 0;
-      transform-origin:left;
-      transform: scaleX(0);
-    }
-  
-    to {
-      opacity: 1;
-      transform-origin:left;
-      transform: scaleX(1);
-    }
-  }
